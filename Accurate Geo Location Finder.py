@@ -2,3 +2,9 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 import time
+
+def getLocation():
+    options = Options()
+    options.add_experimental_option('excludeSwitches', ['enable-logging'])
+    options.add_argument("--use--fake-ui-for-media-stream")
+    driver = webdriver.Chrome(executable_path='C:/Users/hrishabh/PycharmProjects/Acurate Geolocation/chromedriver.exe', options=options)
