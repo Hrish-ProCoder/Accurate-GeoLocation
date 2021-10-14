@@ -8,3 +8,5 @@ def getLocation():
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
     options.add_argument("--use--fake-ui-for-media-stream")
     driver = webdriver.Chrome(executable_path='C:/Users/hrishabh/PycharmProjects/Acurate Geolocation/chromedriver.exe', options=options)
+    # Store chromedriver.exe in ur python file location itself
+    # Edit the path accordingly
