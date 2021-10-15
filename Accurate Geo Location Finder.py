@@ -27,3 +27,5 @@ def getLocation():
     
     driver.quit()
     return (latitude, longitude)
+
+print(getLocation())
