@@ -20,3 +20,7 @@ def getLocation():
     longitude = driver.find_elements_by_xpath('//*[@id="latitude"]')  # Replace with any XPath //*[@id="latitude"]
     longitude = [x.text for x in longitude]
     longitude = str(longitude[0])
+    
+    latitude = driver.find_elements_by_xpath('//*[@id="longitude"]')
+    latitude = [x.text for x in latitude]
+    latitude = str(latitude[0])
