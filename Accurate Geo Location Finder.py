@@ -16,3 +16,7 @@ def getLocation():
     driver.get("https://mycurrentlocation.net/")
     wait = WebDriverWait(driver, timeout)
     time.sleep(3)
+    
+    longitude = driver.find_elements_by_xpath('//*[@id="latitude"]')  # Replace with any XPath //*[@id="latitude"]
+    longitude = [x.text for x in longitude]
+    longitude = str(longitude[0])
