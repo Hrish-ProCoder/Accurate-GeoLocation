@@ -24,3 +24,6 @@ def getLocation():
     latitude = driver.find_elements_by_xpath('//*[@id="longitude"]')
     latitude = [x.text for x in latitude]
     latitude = str(latitude[0])
+    
+    driver.quit()
+    return (latitude, longitude)
